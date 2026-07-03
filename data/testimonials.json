@@ -1,0 +1,62 @@
+{
+  "_schema_version": "1.0.0",
+  "_last_updated": "2025-06-14",
+  "_notes": "Add customer testimonials here. platform options: facebook, instagram, google, ebay, tcgplayer, discord, in-person, other.",
+  "testimonials": [
+    {
+      "id": "t-001",
+      "name": "Mike R.",
+      "location": "Naperville, IL",
+      "platform": "in-person",
+      "rating": 5,
+      "date": "2025-04-19",
+      "text": "Bud had an incredible selection at the Spring Swap Meet. Found three cards I'd been hunting for months at fair prices. He even held them while I grabbed cash from my car — real trust there.",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "t-002",
+      "name": "Sarah T.",
+      "location": "Bolingbrook, IL",
+      "platform": "instagram",
+      "rating": 5,
+      "date": "2025-05-12",
+      "text": "Bulk buying from Bud was seamless. I had a 500+ card lot I needed to move and he made a fair offer within 24 hours. No lowballing, no games. Exactly the kind of vendor the collector community needs.",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "t-003",
+      "name": "James K.",
+      "location": "Chicago, IL",
+      "platform": "discord",
+      "rating": 5,
+      "date": "2025-03-08",
+      "text": "Traded a binder of Magic cards I wasn't using for some Lorcana and One Piece singles I actually wanted. Bud was transparent about valuations and we landed on a deal we both felt great about. 10/10.",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "t-004",
+      "name": "Danny L.",
+      "location": "Joliet, IL",
+      "platform": "in-person",
+      "rating": 5,
+      "date": "2025-02-08",
+      "text": "Stopped by the table at the Naperville show not expecting much. Left with a graded BGS 9 rookie card I've been after for two years. Bud knows his inventory and doesn't waste your time.",
+      "verified": true,
+      "featured": false
+    },
+    {
+      "id": "t-005",
+      "name": "Priya M.",
+      "location": "Aurora, IL",
+      "platform": "facebook",
+      "rating": 5,
+      "date": "2025-01-20",
+      "text": "I'm newer to the hobby and was nervous about buying from a vendor. Bud took time to explain card conditions, answer questions without making me feel rushed, and pointed me toward cards that fit my budget. Rare find in this community.",
+      "verified": true,
+      "featured": true
+    }
+  ]
+}

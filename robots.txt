@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buds-collectibles.github.io/Buds-Collectibles/sitemap.xml

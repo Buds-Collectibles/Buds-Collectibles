@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy · Sell · Trade | Bud's Collectibles</title>
+  <meta name="description" content="How to buy, sell, or trade trading cards with Bud's Collectibles. Learn about payment methods, shipping, trade process, bulk buying, and what cards Bud buys." />
+  <meta name="keywords" content="sell trading cards, trade pokemon cards, buy magic cards, bulk collection buy, card grading, trading card vendor Illinois" />
+  <link rel="canonical" href="https://buds-collectibles.github.io/Buds-Collectibles/buy-sell-trade/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="/Buds-Collectibles/images/favicon.svg" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/global.css" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/nav.css" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/bst.css" />
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner container-wide">
+    <a href="/Buds-Collectibles/" class="nav-logo"><span class="nav-logo-icon">♦</span><span class="nav-logo-text"><span class="nav-logo-name">Bud's</span><span class="nav-logo-sub">Collectibles</span></span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/Buds-Collectibles/" class="nav-link">Home</a></li>
+      <li><a href="/Buds-Collectibles/inventory/" class="nav-link">Inventory</a></li>
+      <li><a href="/Buds-Collectibles/buy-sell-trade/" class="nav-link active">Buy · Sell · Trade</a></li>
+      <li><a href="/Buds-Collectibles/shows/" class="nav-link">Shows</a></li>
+      <li><a href="/Buds-Collectibles/vendor/" class="nav-link">Vendor Info</a></li>
+      <li><a href="/Buds-Collectibles/contact/" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-icon btn-ghost" id="search-toggle" aria-label="Toggle search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      <button class="btn-icon btn-ghost" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="/Buds-Collectibles/qr/" class="btn btn-primary btn-sm nav-qr-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/></svg>QR Hub</a>
+      <button class="btn-icon btn-ghost nav-mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle mobile menu">
+        <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-search" id="nav-search" hidden>
+    <div class="container-wide">
+      <div class="search-input-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="search" id="global-search" class="form-input search-input" placeholder="Search inventory, shows, info..." autocomplete="off" /><kbd class="search-shortcut">ESC</kbd></div>
+      <div id="search-results" class="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="/Buds-Collectibles/" class="mobile-nav-link">🏠 Home</a></li><li><a href="/Buds-Collectibles/inventory/" class="mobile-nav-link">📦 Inventory</a></li>
+      <li><a href="/Buds-Collectibles/buy-sell-trade/" class="mobile-nav-link">💰 Buy · Sell · Trade</a></li><li><a href="/Buds-Collectibles/shows/" class="mobile-nav-link">📅 Shows &amp; Events</a></li>
+      <li><a href="/Buds-Collectibles/vendor/" class="mobile-nav-link">🎪 Vendor Info</a></li><li><a href="/Buds-Collectibles/contact/" class="mobile-nav-link">✉️ Contact</a></li>
+      <li><a href="/Buds-Collectibles/qr/" class="mobile-nav-link mobile-nav-qr">⬛ QR Hub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/Buds-Collectibles/">Home</a><span class="breadcrumb-sep">›</span><span>Buy · Sell · Trade</span></nav>
+      <span class="section-eyebrow">How It Works</span>
+      <h1 class="section-title">Buy · Sell · Trade</h1>
+      <div class="divider-gold"></div>
+      <p style="color:var(--text-secondary);max-width:580px;margin-top:.75rem">Everything you need to know about buying, selling, or trading cards with Bud's Collectibles. Transparent processes, fair pricing, and community-first values.</p>
+      <div class="bst-quick-nav">
+        <a href="#buying" class="btn btn-outline btn-sm">💰 Buying</a>
+        <a href="#selling" class="btn btn-outline btn-sm">📤 Selling to Bud</a>
+        <a href="#trading" class="btn btn-outline btn-sm">🔄 Trading</a>
+        <a href="#shipping" class="btn btn-outline btn-sm">📦 Shipping</a>
+        <a href="#payment" class="btn btn-outline btn-sm">💳 Payment</a>
+        <a href="#bulk" class="btn btn-outline btn-sm">📦 Bulk Buying</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BUYING ── -->
+  <section class="section" id="buying">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col">
+          <div class="bst-big-icon">💰</div>
+        </div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">From Bud's Inventory</span>
+          <h2 class="section-title">Buying Cards</h2>
+          <div class="divider-gold"></div>
+          <p class="bst-lead">All inventory is priced at fair market value using TCGPlayer and recent sales data as a reference. Select items are marked OBO (Or Best Offer) — negotiation is always welcome and never awkward.</p>
+          <div class="bst-cards-grid">
+            <div class="bst-info-card">
+              <div class="bst-info-icon">🛒</div>
+              <h4>In Person at Shows</h4>
+              <p>Browse the full table setup. Handle cards, ask questions, and make offers on the spot. Cash is preferred at shows for the fastest transaction.</p>
+            </div>
+            <div class="bst-info-card">
+              <div class="bst-info-icon">💬</div>
+              <h4>Online via DM</h4>
+              <p>Message on Instagram, Facebook, or Discord with what you're looking for. If it's in stock, Bud will send photos and condition details before purchase.</p>
+            </div>
+            <div class="bst-info-card">
+              <div class="bst-info-icon">📋</div>
+              <h4>Want List Requests</h4>
+              <p>Submit a want list via the contact form. Bud actively sources based on requests and will reach out when target cards come in.</p>
+            </div>
+          </div>
+          <div class="bst-callout">
+            <strong>Pricing Philosophy:</strong> No gouging. Cards are priced based on actual market data, not hype. If a card just spiked, ask — Bud may still honor a fair price for regular customers.
+          </div>
+          <a href="/Buds-Collectibles/inventory/" class="btn btn-primary">Browse Current Inventory →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SELLING ── -->
+  <section class="section" id="selling" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle)">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col">
+          <div class="bst-big-icon">📤</div>
+        </div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">Sell Your Cards</span>
+          <h2 class="section-title">Selling to Bud</h2>
+          <div class="divider-gold"></div>
+          <p class="bst-lead">Looking to move cards? Bud buys singles, collections, binders, and bulk commons. No appointment needed at shows — just bring what you've got. For large lots, reach out ahead of time so Bud can prepare a fair, researched offer.</p>
+
+          <h3 class="bst-sub-heading">What Bud Buys</h3>
+          <div class="bst-checklist">
+            <div class="bst-check-item">✅ Pokémon singles — vintage, modern, alt arts, secret rares</div>
+            <div class="bst-check-item">✅ Magic: The Gathering — reserved list, Commander staples, format playables</div>
+            <div class="bst-check-item">✅ Yu-Gi-Oh! — 1st edition vintage, meta singles, collections</div>
+            <div class="bst-check-item">✅ Sports cards — rookies, graded slabs (PSA/BGS/CGC), vintage</div>
+            <div class="bst-check-item">✅ One Piece TCG — English and Japanese</div>
+            <div class="bst-check-item">✅ Lorcana — singles and sealed</div>
+            <div class="bst-check-item">✅ Sealed product — booster boxes, ETBs, booster packs</div>
+            <div class="bst-check-item">✅ Bulk commons/uncommons — by the thousand</div>
+          </div>
+
+          <h3 class="bst-sub-heading">The Selling Process</h3>
+          <div class="bst-steps">
+            <div class="bst-step">
+              <div class="bst-step-num">1</div>
+              <div class="bst-step-body">
+                <h4>Contact or Bring Cards</h4>
+                <p>DM on social media with a photo/list, or bring cards directly to a show. No appointment needed for small lots.</p>
+              </div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">2</div>
+              <div class="bst-step-body">
+                <h4>Cards Are Reviewed</h4>
+                <p>Bud evaluates condition and cross-references current market data (TCGPlayer, eBay sold listings) to build an offer.</p>
+              </div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">3</div>
+              <div class="bst-step-body">
+                <h4>Offer Made — No Pressure</h4>
+                <p>You'll receive a transparent, itemized offer. No pressure to accept. The offer is explained and you're free to walk away.</p>
+              </div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">4</div>
+              <div class="bst-step-body">
+                <h4>Get Paid Immediately</h4>
+                <p>Cash at shows. Digital payments (Venmo, Zelle, PayPal F&amp;F) within 24 hours for online transactions.</p>
+              </div>
+            </div>
+          </div>
+          <a href="/Buds-Collectibles/contact/" class="btn btn-primary mt-4">Contact About Selling →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRADING ── -->
+  <section class="section" id="trading">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col">
+          <div class="bst-big-icon">🔄</div>
+        </div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">Trade Your Cards</span>
+          <h2 class="section-title">Trading with Bud</h2>
+          <div class="divider-gold"></div>
+          <p class="bst-lead">Trading is one of the best parts of this hobby. Bud is always open to fair trades — whether you're looking to upgrade, move to a different game, or swap a collection you've outgrown.</p>
+
+          <h3 class="bst-sub-heading">Trade Preferences</h3>
+          <div class="bst-cards-grid">
+            <div class="bst-info-card">
+              <div class="bst-info-icon">📊</div>
+              <h4>Valuation Method</h4>
+              <p>TCGPlayer market price is used as the base for all trade valuations. Both sides of the trade are evaluated using the same standard — no double standards.</p>
+            </div>
+            <div class="bst-info-card">
+              <div class="bst-info-icon">🎯</div>
+              <h4>What Bud Trades For</h4>
+              <p>High-demand singles in any TCG, graded cards, sealed product, vintage items, and bulk collections. If you have it, ask — the answer is usually yes.</p>
+            </div>
+            <div class="bst-info-card">
+              <div class="bst-info-icon">⚖️</div>
+              <h4>Trade Add-Ons</h4>
+              <p>If a trade isn't perfectly even, cash can bridge the gap on either side. No trade should feel lopsided — if it does, something gets adjusted.</p>
+            </div>
+          </div>
+
+          <h3 class="bst-sub-heading">The Trade Process</h3>
+          <div class="bst-steps">
+            <div class="bst-step">
+              <div class="bst-step-num">1</div>
+              <div class="bst-step-body"><h4>Reach Out</h4><p>DM on Instagram, Facebook, or Discord with what you have and what you're looking for. Or bring cards to a show.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">2</div>
+              <div class="bst-step-body"><h4>Cards Are Valued</h4><p>Both sides pull up TCGPlayer market values together. Transparency is key — Bud will show you exactly what reference is being used.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">3</div>
+              <div class="bst-step-body"><h4>Deal or Adjust</h4><p>If values line up, great. If not, cards or cash are added to even things out. Nobody walks away feeling shortchanged.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">4</div>
+              <div class="bst-step-body"><h4>Cards Swap Hands</h4><p>Both parties inspect their received cards before the trade finalizes. Once exchanged, trades are complete — inspect carefully before agreeing.</p></div>
+            </div>
+          </div>
+          <a href="/Buds-Collectibles/contact/" class="btn btn-primary mt-4">Propose a Trade →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SHIPPING ── -->
+  <section class="section" id="shipping" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle)">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col"><div class="bst-big-icon">📦</div></div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">Delivery</span>
+          <h2 class="section-title">Shipping Info</h2>
+          <div class="divider-gold"></div>
+          <div class="bst-shipping-grid">
+            <div class="bst-shipping-item">
+              <h4>📍 Domestic Shipping</h4>
+              <p>Ships to all US addresses via USPS or UPS. Orders typically ship within 1–3 business days of payment confirmation.</p>
+            </div>
+            <div class="bst-shipping-item">
+              <h4>🌍 International</h4>
+              <p>Not available at this time. US-only shipping. Check back in the future as this may change.</p>
+            </div>
+            <div class="bst-shipping-item">
+              <h4>🎁 Free Shipping</h4>
+              <p>Free tracked shipping on orders over $100. Under $100 — actual carrier cost charged, no markup.</p>
+            </div>
+            <div class="bst-shipping-item">
+              <h4>🔒 Packaging</h4>
+              <p>All singles ship sleeved, in a top loader or card saver, wrapped in bubble wrap, inside a rigid bubble mailer. Sealed product ships double-boxed.</p>
+            </div>
+            <div class="bst-shipping-item">
+              <h4>📋 Tracking</h4>
+              <p>Every shipment includes tracking. You'll receive a tracking number as soon as the package is scanned at the post office.</p>
+            </div>
+            <div class="bst-shipping-item">
+              <h4>⚠️ Damage Claims</h4>
+              <p>Cards are photographed before shipping. If a card arrives damaged due to shipping, contact within 48 hours of delivery with photos for resolution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PAYMENT ── -->
+  <section class="section" id="payment">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col"><div class="bst-big-icon">💳</div></div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">How to Pay</span>
+          <h2 class="section-title">Payment Methods</h2>
+          <div class="divider-gold"></div>
+          <p class="bst-lead">Multiple payment options available to make transactions as easy as possible. For in-person show purchases, cash moves fastest. For online purchases, digital payments are preferred.</p>
+          <div class="payment-methods-grid">
+            <div class="payment-method">
+              <div class="payment-method-icon">💵</div>
+              <div class="payment-method-name">Cash</div>
+              <div class="payment-method-note">Preferred at shows</div>
+            </div>
+            <div class="payment-method">
+              <div class="payment-method-icon">📱</div>
+              <div class="payment-method-name">Venmo</div>
+              <div class="payment-method-note">@BudsCollectibles</div>
+            </div>
+            <div class="payment-method">
+              <div class="payment-method-icon">💸</div>
+              <div class="payment-method-name">PayPal G&amp;S</div>
+              <div class="payment-method-note">Buyer protection included</div>
+            </div>
+            <div class="payment-method">
+              <div class="payment-method-icon">⚡</div>
+              <div class="payment-method-name">Zelle</div>
+              <div class="payment-method-note">Instant transfers</div>
+            </div>
+            <div class="payment-method">
+              <div class="payment-method-icon">💳</div>
+              <div class="payment-method-name">Square / Card</div>
+              <div class="payment-method-note">Visa, MC, Amex at shows</div>
+            </div>
+          </div>
+          <div class="bst-callout bst-callout-warning">
+            <strong>⚠️ Scam Warning:</strong> Bud will never ask for gift cards, crypto, or PayPal Friends &amp; Family on first contact. If someone claims to be Bud's Collectibles and asks for these, it is a scam. Contact directly to verify.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BULK BUYING ── -->
+  <section class="section" id="bulk" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle)">
+    <div class="container">
+      <div class="bst-section-grid">
+        <div class="bst-icon-col"><div class="bst-big-icon">🗂️</div></div>
+        <div class="bst-content-col">
+          <span class="section-eyebrow">Large Collections &amp; Lots</span>
+          <h2 class="section-title">Bulk Buying</h2>
+          <div class="divider-gold"></div>
+          <p class="bst-lead">Have hundreds or thousands of cards to move? Bud buys bulk lots — no cherry-picking required on your end. Bring the whole collection and get a fair offer for everything.</p>
+
+          <h3 class="bst-sub-heading">What Counts as Bulk?</h3>
+          <div class="bst-checklist">
+            <div class="bst-check-item">📦 Full binder collections (50–1000+ cards)</div>
+            <div class="bst-check-item">📦 Commons/uncommons by the thousand</div>
+            <div class="bst-check-item">📦 Mixed TCG collections</div>
+            <div class="bst-check-item">📦 Parent/grandparent estate collections</div>
+            <div class="bst-check-item">📦 "I found these in a box" situations</div>
+            <div class="bst-check-item">📦 Full sealed cases or lot purchases</div>
+          </div>
+
+          <h3 class="bst-sub-heading">Bulk Process</h3>
+          <div class="bst-steps">
+            <div class="bst-step">
+              <div class="bst-step-num">1</div>
+              <div class="bst-step-body"><h4>Send Photos First</h4><p>For large lots, send photos of the best cards and an approximate count via DM or email. This helps Bud prepare a realistic ballpark before you come out.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">2</div>
+              <div class="bst-step-body"><h4>Bring to a Show (or arrange pickup)</h4><p>For very large collections, Bud may be able to arrange local pickup in the Chicagoland area. Shows are usually the most convenient meeting point.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">3</div>
+              <div class="bst-step-body"><h4>Full Review &amp; Offer</h4><p>Bud reviews the full lot — high-value cards are identified and priced individually. The remainder is valued as bulk. An itemized breakdown can be provided.</p></div>
+            </div>
+            <div class="bst-step">
+              <div class="bst-step-num">4</div>
+              <div class="bst-step-body"><h4>Same-Day Payment</h4><p>Cash at shows for immediate payment. For very large collections, partial payment upfront and remainder within 48 hours can be arranged.</p></div>
+            </div>
+          </div>
+          <a href="/Buds-Collectibles/contact/" class="btn btn-primary mt-4">Contact About a Bulk Lot →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section-sm">
+    <div class="container text-center">
+      <h2 style="font-family:var(--font-display);font-size:1.75rem;margin-bottom:.75rem">Ready to get started?</h2>
+      <p style="color:var(--text-secondary);margin-bottom:1.5rem;max-width:480px;margin-left:auto;margin-right:auto">Whether you're buying, selling, or trading — reach out directly or find Bud at an upcoming show.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="/Buds-Collectibles/contact/" class="btn btn-primary btn-lg">Get in Touch</a>
+        <a href="/Buds-Collectibles/shows/" class="btn btn-outline btn-lg">Show Schedule</a>
+        <a href="/Buds-Collectibles/inventory/" class="btn btn-ghost btn-lg">Browse Inventory</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/Buds-Collectibles/" class="footer-logo"><span class="footer-logo-icon">♦</span><span>Bud's Collectibles</span></a><p class="footer-tagline">Buy · Sell · Trade · Connect</p><p class="footer-description">Your trusted Chicagoland trading card vendor.</p></div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/">Home</a></li><li><a href="/Buds-Collectibles/inventory/">Inventory</a></li><li><a href="/Buds-Collectibles/buy-sell-trade/">Buy · Sell · Trade</a></li><li><a href="/Buds-Collectibles/shows/">Shows</a></li><li><a href="/Buds-Collectibles/vendor/">Vendor Info</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Categories</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/inventory/?cat=pokemon">Pokémon</a></li><li><a href="/Buds-Collectibles/inventory/?cat=magic">Magic</a></li><li><a href="/Buds-Collectibles/inventory/?cat=sports">Sports</a></li><li><a href="/Buds-Collectibles/inventory/?cat=yugioh">Yu-Gi-Oh!</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Find Us</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/shows/">Upcoming Shows</a></li><li><a href="/Buds-Collectibles/qr/">QR Hub</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul><div class="footer-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Bolingbrook, IL</div></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">&copy; <span id="footer-year"></span> Bud's Collectibles.</p><div class="footer-bottom-links"><a href="/Buds-Collectibles/qr/">QR Hub</a><span>·</span><a href="/Buds-Collectibles/sitemap.xml">Sitemap</a></div></div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+<div id="toast-container" aria-live="polite"></div>
+<script src="/Buds-Collectibles/scripts/theme.js"></script>
+<script src="/Buds-Collectibles/scripts/nav.js"></script>
+<script src="/Buds-Collectibles/scripts/search.js"></script>
+<script src="/Buds-Collectibles/scripts/utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<svg width="680" height="600" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" role="img">
+<title>Bud's Collectibles deployment architecture</title>
+<desc>A linear pipeline showing how a content update reaches visitors: you edit a JSON file, push to the main branch on GitHub, GitHub Actions validates the JSON and deploys it, GitHub Pages serves the static files from its CDN, and a visitor's browser fetches the HTML, CSS, and JSON to render the live page.</desc>
+<defs>
+<marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<rect x="0" y="0" width="680" height="600" fill="#FAFAF8"/>
+
+<line x1="340" y1="96" x2="340" y2="156" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow2)"/>
+<line x1="340" y1="212" x2="340" y2="272" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow2)"/>
+<line x1="340" y1="328" x2="340" y2="388" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow2)"/>
+<line x1="340" y1="444" x2="340" y2="504" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow2)"/>
+
+<g>
+<rect x="220" y="40" width="240" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="58" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">You edit a JSON file</text>
+<text x="340" y="76" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">inventory.json, shows.json...</text>
+</g>
+
+<g>
+<rect x="220" y="156" width="240" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="174" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Commit to main branch</text>
+<text x="340" y="192" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Triggers the workflow</text>
+</g>
+
+<g>
+<rect x="220" y="272" width="240" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="290" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">GitHub Actions runs</text>
+<text x="340" y="308" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Validates JSON, then deploys</text>
+</g>
+
+<g>
+<rect x="220" y="388" width="240" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="340" y="406" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#3C3489">GitHub Pages (CDN)</text>
+<text x="340" y="424" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Serves files globally</text>
+</g>
+
+<g>
+<rect x="220" y="504" width="240" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="522" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Visitor's browser</text>
+<text x="340" y="540" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Fetches JSON, renders live</text>
+</g>
+
+<text x="340" y="580" text-anchor="middle" font-size="12" fill="#5F5E5A">Gray = manual step &#183; Teal = automation &#183; Purple = hosting</text>
+</svg>

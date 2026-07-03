@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show Schedule | Bud's Collectibles — Upcoming Card Shows</title>
+  <meta name="description" content="Find Bud's Collectibles at upcoming Chicagoland trading card shows. Check the show schedule, table locations, hours, and event recaps." />
+  <meta name="keywords" content="Chicagoland card show, trading card show Illinois, Bolingbrook card show, card vendor schedule, pokemon card show near me" />
+  <link rel="canonical" href="https://buds-collectibles.github.io/Buds-Collectibles/shows/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="/Buds-Collectibles/images/favicon.svg" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/global.css" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/nav.css" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/shows.css" />
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner container-wide">
+    <a href="/Buds-Collectibles/" class="nav-logo"><span class="nav-logo-icon">♦</span><span class="nav-logo-text"><span class="nav-logo-name">Bud's</span><span class="nav-logo-sub">Collectibles</span></span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/Buds-Collectibles/" class="nav-link">Home</a></li>
+      <li><a href="/Buds-Collectibles/inventory/" class="nav-link">Inventory</a></li>
+      <li><a href="/Buds-Collectibles/buy-sell-trade/" class="nav-link">Buy · Sell · Trade</a></li>
+      <li><a href="/Buds-Collectibles/shows/" class="nav-link active">Shows</a></li>
+      <li><a href="/Buds-Collectibles/vendor/" class="nav-link">Vendor Info</a></li>
+      <li><a href="/Buds-Collectibles/contact/" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-icon btn-ghost" id="search-toggle" aria-label="Toggle search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      <button class="btn-icon btn-ghost" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="/Buds-Collectibles/qr/" class="btn btn-primary btn-sm nav-qr-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/></svg>QR Hub</a>
+      <button class="btn-icon btn-ghost nav-mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle mobile menu">
+        <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-search" id="nav-search" hidden>
+    <div class="container-wide">
+      <div class="search-input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="global-search" class="form-input search-input" placeholder="Search inventory, shows, info..." autocomplete="off" />
+        <kbd class="search-shortcut">ESC</kbd>
+      </div>
+      <div id="search-results" class="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="/Buds-Collectibles/" class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="/Buds-Collectibles/inventory/" class="mobile-nav-link">📦 Inventory</a></li>
+      <li><a href="/Buds-Collectibles/buy-sell-trade/" class="mobile-nav-link">💰 Buy · Sell · Trade</a></li>
+      <li><a href="/Buds-Collectibles/shows/" class="mobile-nav-link">📅 Shows &amp; Events</a></li>
+      <li><a href="/Buds-Collectibles/vendor/" class="mobile-nav-link">🎪 Vendor Info</a></li>
+      <li><a href="/Buds-Collectibles/contact/" class="mobile-nav-link">✉️ Contact</a></li>
+      <li><a href="/Buds-Collectibles/qr/" class="mobile-nav-link mobile-nav-qr">⬛ QR Hub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/Buds-Collectibles/">Home</a><span class="breadcrumb-sep">›</span><span>Shows &amp; Events</span></nav>
+      <span class="section-eyebrow">Find Us In Person</span>
+      <h1 class="section-title">Show Schedule</h1>
+      <div class="divider-gold"></div>
+      <p style="color:var(--text-secondary);max-width:540px;margin-top:.75rem">See where Bud's Collectibles will be next. Come find us at the table — bring your want lists and trade binders.</p>
+      <div class="shows-quick-nav">
+        <a href="#upcoming" class="btn btn-primary btn-sm">📅 Upcoming</a>
+        <a href="#past" class="btn btn-outline btn-sm">📜 Past Shows</a>
+        <a href="/Buds-Collectibles/qr/" class="btn btn-outline btn-sm">⬛ Show Day QR Hub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Show Banner -->
+  <div class="next-show-banner" id="next-show-banner">
+    <div class="container">
+      <div class="next-show-inner" id="next-show-inner">
+        <!-- Loaded by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- UPCOMING SHOWS -->
+  <section class="section" id="upcoming">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Coming Up</span>
+        <h2 class="section-title">Upcoming Shows</h2>
+        <div class="divider-gold"></div>
+      </div>
+      <div id="upcoming-shows" class="shows-list">
+        <!-- Loaded by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST SHOWS -->
+  <section class="section" id="past" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Event History</span>
+        <h2 class="section-title">Past Shows &amp; Recaps</h2>
+        <div class="divider-gold"></div>
+        <p class="section-subtitle">A look back at events attended, with notes on how each one went.</p>
+      </div>
+      <div id="past-shows" class="shows-list">
+        <!-- Loaded by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOW AT A GLANCE CTA -->
+  <section class="section-sm" style="background:var(--bg-base)">
+    <div class="container">
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-2xl);padding:2.5rem;text-align:center">
+        <h2 style="font-family:var(--font-display);margin-bottom:.75rem">Attending a show?</h2>
+        <p style="color:var(--text-secondary);margin-bottom:1.5rem;max-width:480px;margin-left:auto;margin-right:auto">Pull up the QR Hub on your phone for quick access to all vendor info, social links, and contact details — right at the table.</p>
+        <a href="/Buds-Collectibles/qr/" class="btn btn-primary btn-lg">Open QR Hub →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/Buds-Collectibles/" class="footer-logo"><span class="footer-logo-icon">♦</span><span>Bud's Collectibles</span></a>
+        <p class="footer-tagline">Buy · Sell · Trade · Connect</p>
+        <p class="footer-description">Your trusted Chicagoland trading card vendor.</p>
+      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/">Home</a></li><li><a href="/Buds-Collectibles/inventory/">Inventory</a></li><li><a href="/Buds-Collectibles/shows/">Shows</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Categories</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/inventory/?cat=pokemon">Pokémon</a></li><li><a href="/Buds-Collectibles/inventory/?cat=magic">Magic</a></li><li><a href="/Buds-Collectibles/inventory/?cat=sports">Sports</a></li><li><a href="/Buds-Collectibles/inventory/?cat=yugioh">Yu-Gi-Oh!</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Find Us</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/qr/">Show QR Hub</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul><div class="footer-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Bolingbrook, IL</div></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">&copy; <span id="footer-year"></span> Bud's Collectibles.</p><div class="footer-bottom-links"><a href="/Buds-Collectibles/qr/">QR Hub</a><span>·</span><a href="/Buds-Collectibles/sitemap.xml">Sitemap</a></div></div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+<div id="toast-container" aria-live="polite"></div>
+
+<script src="/Buds-Collectibles/scripts/theme.js"></script>
+<script src="/Buds-Collectibles/scripts/nav.js"></script>
+<script src="/Buds-Collectibles/scripts/search.js"></script>
+<script src="/Buds-Collectibles/scripts/utils.js"></script>
+<script src="/Buds-Collectibles/scripts/shows.js"></script>
+</body>
+</html>

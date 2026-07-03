@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Page Not Found | Bud's Collectibles</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/svg+xml" href="/Buds-Collectibles/images/favicon.svg" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/global.css" />
+  <link rel="stylesheet" href="/Buds-Collectibles/styles/nav.css" />
+  <style>
+    .error-main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-6);
+      text-align: center;
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 18vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-2);
+    }
+    .error-title {
+      font-size: 1.4rem;
+      margin-bottom: var(--space-3);
+    }
+    .error-desc {
+      color: var(--text-secondary);
+      max-width: 420px;
+      margin: 0 auto var(--space-8);
+    }
+    .error-actions {
+      display: flex;
+      gap: var(--space-3);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-card-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-4);
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <main class="error-main">
+    <div>
+      <div class="error-card-icon">🃏</div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">This card isn't in the binder.</h1>
+      <p class="error-desc">The page you're looking for doesn't exist — it may have been moved, or the link might have a typo. Let's get you back on track.</p>
+      <div class="error-actions">
+        <a href="/Buds-Collectibles/" class="btn btn-primary btn-lg">Back to Home</a>
+        <a href="/Buds-Collectibles/inventory/" class="btn btn-outline btn-lg">Browse Inventory</a>
+      </div>
+    </div>
+  </main>
+  <script src="/Buds-Collectibles/scripts/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+/* ============================================================
+   QR HUB PAGE STYLES
+   Mobile-first, single-column, optimized for quick scanning
+   ============================================================ */
+
+.qr-body {
+  background: var(--bg-base);
+  min-height: 100vh;
+}
+
+.qr-main {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) var(--space-4) var(--space-12);
+  min-height: 100vh;
+}
+
+.qr-container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ── */
+.qr-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  padding-top: var(--space-4);
+}
+
+.qr-logo-icon {
+  font-size: 2.5rem;
+  color: var(--accent-primary);
+  margin-bottom: var(--space-2);
+  filter: drop-shadow(0 0 12px var(--accent-primary-glow));
+}
+
+.qr-logo-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.qr-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-primary);
+  margin-bottom: var(--space-4);
+}
+
+.qr-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--accent-primary-dim);
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.qr-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-success);
+  box-shadow: 0 0 6px var(--color-success);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ── TODAY'S SHOW CARD ── */
+.qr-today-card {
+  background: linear-gradient(135deg, var(--accent-primary-dim), var(--bg-card));
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-5);
+  text-align: center;
+}
+
+.qr-today-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-primary);
+  margin-bottom: 4px;
+}
+
+.qr-today-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.qr-today-meta {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* ── ACTION BUTTONS ── */
+.qr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.qr-action-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  min-height: 64px;
+}
+
+.qr-action-btn:active {
+  transform: scale(0.98);
+  opacity: 1;
+}
+
+.qr-action-btn:hover {
+  border-color: var(--border-default);
+  opacity: 1;
+}
+
+.qr-action-primary {
+  background: linear-gradient(135deg, var(--accent-primary-dim), var(--bg-card));
+  border-color: var(--accent-primary);
+}
+
+.qr-action-icon {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+}
+
+.qr-action-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-action-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.qr-action-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.qr-action-arrow {
+  color: var(--accent-primary);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* ── SOCIALS ── */
+.qr-socials-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.qr-socials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.qr-social-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-fast);
+}
+
+.qr-social-btn:active { transform: scale(0.95); }
+
+.qr-social-ig:hover { border-color: #e1306c; color: #e1306c; opacity: 1; }
+.qr-social-fb:hover { border-color: #1877f2; color: #1877f2; opacity: 1; }
+.qr-social-discord:hover { border-color: #5865f2; color: #5865f2; opacity: 1; }
+.qr-social-email:hover { border-color: var(--accent-primary); color: var(--accent-primary); opacity: 1; }
+
+/* ── INFO STRIP ── */
+.qr-info-strip {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.qr-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.qr-info-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* ── FULL SITE LINK ── */
+.qr-full-site-link {
+  display: block;
+  text-align: center;
+  padding: var(--space-3);
+  color: var(--accent-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+.qr-full-site-link:hover {
+  border-color: var(--accent-primary);
+  opacity: 1;
+}
+
+/* ── FOOTER ── */
+.qr-footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.qr-footer-sub {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  margin-top: 2px;
+  opacity: 0.7;
+}
+
+/* ── Slightly wider screens get a bit more breathing room ── */
+@media (min-width: 480px) {
+  .qr-action-btn { padding: var(--space-5) var(--space-6); }
+}
