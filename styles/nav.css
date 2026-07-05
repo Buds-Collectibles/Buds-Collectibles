@@ -104,6 +104,14 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  flex-shrink: 0;  /* never squish the action buttons */
+}
+
+/* On very small screens, tighten the gap slightly but keep buttons touchable */
+@media (max-width: 380px) {
+  .nav-actions {
+    gap: var(--space-1);
+  }
 }
 
 .nav-qr-btn {
@@ -116,6 +124,8 @@
 
 .nav-mobile-toggle {
   display: flex;
+  min-width: 44px;   /* guarantee full touch target width */
+  min-height: 44px;
 }
 
 @media (min-width: 1024px) {
@@ -425,6 +435,8 @@ main { padding-top: var(--nav-height); }
   border-radius: 8px;
   display: block;
   object-fit: contain;
+  /* prevent logo from ever pushing nav-actions off screen */
+  max-width: 44px;
 }
 
 .footer-logo-img {
