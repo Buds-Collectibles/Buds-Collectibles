@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
           throw new Error('Form submission failed');
         }
       } catch (err) {
-        showStatus('error', '❌ Something went wrong. Please try again or email bud@budscollectibles.com directly.');
+        showStatus('error', '❌ Something went wrong. Please try again or email budcollectibles@gmail.com directly.');
         console.error(err);
       } finally {
         submitBtn.disabled = false;

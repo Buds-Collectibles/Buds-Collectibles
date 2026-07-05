@@ -2,20 +2,19 @@
   "_notes": "Edit this file to update your business info, social links, and site-wide settings without touching any code.",
   "business": {
     "name": "Bud's Collectibles",
-    "tagline": "Buy · Sell · Trade · Connect",
+    "tagline": "Buy \u00b7 Sell \u00b7 Trade \u00b7 Connect",
     "description": "Your trusted source for trading cards, sealed product, and graded collectibles in the Chicagoland area.",
     "owner": "Bud",
-    "location": "Bolingbrook, IL",
-    "email": "bud@budscollectibles.com",
+    "location": "Aurora, IL",
+    "email": "budcollectibles@gmail.com",
     "phone": "",
     "foundedYear": 2023
   },
   "socials": {
     "instagram": "https://instagram.com/budscollectibles",
     "facebook": "https://facebook.com/budscollectibles",
-    "twitter": "",
+    "twitter": "https://x.com/budcollectibles",
     "tiktok": "",
-    "discord": "https://discord.gg/budscollectibles",
     "youtube": "",
     "ebay": "",
     "tcgplayer": "",
@@ -33,12 +32,28 @@
     "showSoldItems": false,
     "enableSearch": true
   },
-  "paymentMethods": ["Cash", "Venmo", "PayPal (G&S)", "Zelle", "Card (Square)"],
+  "paymentMethods": [
+    "Cash",
+    "Venmo (@budcollectibles)",
+    "PayPal (G&S)",
+    "Zelle",
+    "Card (Square)"
+  ],
   "shippingInfo": {
     "domestic": true,
     "international": false,
     "handlingDays": "1-3",
-    "carriers": ["USPS", "UPS"],
-    "minimumForFreeShipping": 100
-  }
+    "carriers": [
+      "USPS",
+      "UPS"
+    ],
+    "minimumForFreeShipping": 100,
+    "options": {
+      "PWE": "$1.50 (Plain White Envelope, singles only)",
+      "BMWT": "$5.00 (Bubble Mailer with Tracking)",
+      "freeOver": "$100 (free tracked shipping)"
+    }
+  },
+  "collectr": "https://app.getcollectr.com/showcase/profile/@buddytohelpu",
+  "pricingSource": "PriceCharting (TCGPlayer & eBay recently sold data), Alt"
 }

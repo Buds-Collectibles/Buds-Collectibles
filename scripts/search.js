@@ -44,23 +44,10 @@
     searchLoaded = true;
 
     try {
-      const [inventoryRes, showsRes] = await Promise.all([
-        fetch('/Buds-Collectibles/data/inventory.json').catch(() => null),
+      const [showsRes] = await Promise.all([
         fetch('/Buds-Collectibles/data/shows.json').catch(() => null)
       ]);
 
-      if (inventoryRes && inventoryRes.ok) {
-        const data = await inventoryRes.json();
-        data.items.filter(i => !i.sold).forEach(item => {
-          searchData.push({
-            type: 'inventory',
-            title: item.name,
-            subtitle: item.set + ' · ' + item.category,
-            url: '/Buds-Collectibles/inventory/?search=' + encodeURIComponent(item.name),
-            keywords: [item.name, item.set, item.category, item.type, ...(item.tags || [])].join(' ').toLowerCase()
-          });
-        });
-      }
 
       if (showsRes && showsRes.ok) {
         const data = await showsRes.json();

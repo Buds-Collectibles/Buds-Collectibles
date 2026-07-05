@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     },
     {
       q: "What if I think a price is too high?",
-      a: "Most items are priced near TCGPlayer market value. Items marked 'OBO' (or best offer) are open to negotiation — just ask. Items without OBO are generally firm, but reasonable offers are always considered."
+      a: "Most items are priced near PriceCharting value. Items marked 'OBO' (or best offer) are open to negotiation — just ask. Items without OBO are generally firm, but reasonable offers are always considered."
     },
     {
       q: "How do bulk buying offers work?",

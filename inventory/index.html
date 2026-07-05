@@ -4,28 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0a0f" />
-  <title>Inventory | Bud's Collectibles — Singles, Sealed &amp; Graded Cards</title>
-  <meta name="description" content="Browse Bud's Collectibles full inventory: Pokémon, Magic: The Gathering, Yu-Gi-Oh!, sports cards, One Piece, Lorcana, sealed product, and PSA/BGS graded slabs. Chicagoland's trusted card vendor." />
-  <meta name="keywords" content="pokemon cards for sale, magic the gathering singles, yugioh cards, sports card inventory, lorcana singles, one piece tcg, graded cards PSA BGS, sealed booster box" />
+  <title>Inventory | Bud's Collectibles — Browse on Collectr</title>
+  <meta name="description" content="Browse Bud's Collectibles full inventory on Collectr — Pokémon, Magic: The Gathering, Yu-Gi-Oh!, One Piece, and Lorcana singles, sealed product, and graded slabs." />
+  <meta name="keywords" content="pokemon cards for sale, magic the gathering singles, yugioh cards, lorcana singles, one piece tcg, graded cards PSA BGS, sealed booster box, Collectr showcase" />
   <link rel="canonical" href="https://buds-collectibles.github.io/Buds-Collectibles/inventory/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/svg+xml" href="/Buds-Collectibles/images/favicon.svg" />
   <link rel="stylesheet" href="/Buds-Collectibles/styles/global.css" />
   <link rel="stylesheet" href="/Buds-Collectibles/styles/nav.css" />
-  <link rel="stylesheet" href="/Buds-Collectibles/styles/inventory.css" />
+  <style>
+    .collectr-hero { text-align: center; padding: var(--space-16) 0 var(--space-10); }
+    .collectr-logo-wrap { margin: 0 auto var(--space-8); max-width: 500px; }
+    .collectr-cta-card {
+      max-width: 680px; margin: 0 auto;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-2xl); padding: var(--space-10);
+      text-align: center;
+    }
+    .collectr-badge {
+      display: inline-block; background: var(--accent-primary-dim);
+      border: 1px solid var(--accent-primary); border-radius: var(--radius-pill);
+      color: var(--accent-primary); font-family: var(--font-mono);
+      font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 4px 14px; margin-bottom: var(--space-5);
+    }
+    .collectr-main-btn {
+      display: inline-flex; align-items: center; gap: var(--space-3);
+      padding: 1rem 2.5rem; background: var(--accent-primary);
+      color: var(--text-inverse); border-radius: var(--radius-lg);
+      font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;
+      letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none;
+      transition: all var(--transition-base); margin-top: var(--space-6);
+      box-shadow: 0 4px 20px var(--accent-primary-glow);
+    }
+    .collectr-main-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-gold); opacity: 1; }
+    .collectr-note { margin-top: var(--space-4); font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); }
+    .tcg-chips { display: flex; flex-wrap: wrap; gap: var(--space-2); justify-content: center; margin-top: var(--space-6); }
+    .how-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-4); margin-top: var(--space-6); text-align: left; }
+    @media(min-width:600px){ .how-grid { grid-template-columns: repeat(3,1fr); } }
+    .how-card { background: var(--bg-elevated); border-radius: var(--radius-lg); padding: var(--space-4); }
+    .how-num { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--accent-primary); }
+    .how-title { font-size: .92rem; font-weight: 600; color: var(--text-primary); margin: 4px 0 4px; }
+    .how-desc { font-size: .82rem; color: var(--text-secondary); line-height: 1.5; }
+  </style>
 </head>
 <body>
 
-<!-- ── NAV (same on all pages) ── -->
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner container-wide">
     <a href="/Buds-Collectibles/" class="nav-logo" aria-label="Bud's Collectibles Home">
-      <span class="nav-logo-icon" aria-hidden="true">♦</span>
-      <span class="nav-logo-text">
-        <span class="nav-logo-name">Bud's</span>
-        <span class="nav-logo-sub">Collectibles</span>
-      </span>
+      <img src="/Buds-Collectibles/images/logo.png" alt="Bud's Collectibles" class="nav-logo-img" />
     </a>
     <ul class="nav-links" role="list">
       <li><a href="/Buds-Collectibles/" class="nav-link">Home</a></li>
@@ -41,11 +70,8 @@
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
-      <a href="/Buds-Collectibles/qr/" class="btn btn-primary btn-sm nav-qr-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/></svg>
-        QR Hub
-      </a>
-      <button class="btn-icon btn-ghost nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <a href="/Buds-Collectibles/qr/" class="btn btn-primary btn-sm nav-qr-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/></svg>QR Hub</a>
+      <button class="btn-icon btn-ghost nav-mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle mobile menu">
         <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -53,11 +79,7 @@
   </div>
   <div class="nav-search" id="nav-search" hidden>
     <div class="container-wide">
-      <div class="search-input-wrap">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="search" id="global-search" class="form-input search-input" placeholder="Search inventory, shows, info..." autocomplete="off" />
-        <kbd class="search-shortcut">ESC</kbd>
-      </div>
+      <div class="search-input-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="search" id="global-search" class="form-input search-input" placeholder="Search shows, info..." autocomplete="off" /><kbd class="search-shortcut">ESC</kbd></div>
       <div id="search-results" class="search-results" aria-live="polite"></div>
     </div>
   </div>
@@ -72,207 +94,92 @@
       <li><a href="/Buds-Collectibles/qr/" class="mobile-nav-link mobile-nav-qr">⬛ QR Hub</a></li>
     </ul>
     <div class="mobile-menu-socials">
-      <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
-      <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="https://instagram.com/budscollectibles" aria-label="Instagram" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://x.com/budcollectibles" aria-label="Twitter / X" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     </div>
   </div>
 </nav>
 
 <main id="main-content">
+  <div class="container">
+    <div class="collectr-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/Buds-Collectibles/">Home</a><span class="breadcrumb-sep">›</span><span>Inventory</span></nav>
 
-  <!-- ── PAGE HERO ── -->
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/Buds-Collectibles/">Home</a><span class="breadcrumb-sep">›</span>
-        <span>Inventory</span>
-      </nav>
-      <span class="section-eyebrow">Currently Available</span>
-      <h1 class="section-title">Browse Inventory</h1>
-      <div class="divider-gold"></div>
-      <p style="color:var(--text-secondary);max-width:540px;margin-top:.75rem">
-        Singles, sealed product, and graded slabs. Updated regularly. Prices are fair market — select items marked OBO.
-      </p>
-      <div class="inv-hero-stats" id="inv-stats">
-        <span class="inv-stat"><span class="inv-stat-num" id="stat-total">—</span> Listed</span>
-        <span class="inv-stat-divider">·</span>
-        <span class="inv-stat"><span class="inv-stat-num" id="stat-singles">—</span> Singles</span>
-        <span class="inv-stat-divider">·</span>
-        <span class="inv-stat"><span class="inv-stat-num" id="stat-sealed">—</span> Sealed</span>
-        <span class="inv-stat-divider">·</span>
-        <span class="inv-stat"><span class="inv-stat-num" id="stat-graded">—</span> Graded</span>
-      </div>
-    </div>
-  </section>
+      <div class="collectr-cta-card">
+        <span class="collectr-badge">Live Inventory on Collectr</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.75rem">Browse the Full Collection</h1>
+        <p style="color:var(--text-secondary);max-width:480px;margin:0 auto;font-size:1rem;line-height:1.7">
+          All available inventory is listed on Collectr — the collector-focused portfolio platform. Browse singles, sealed product, and graded slabs, then reach out to purchase.
+        </p>
 
-  <!-- ── INVENTORY BROWSER ── -->
-  <section class="section-sm">
-    <div class="container">
-
-      <!-- Controls Bar -->
-      <div class="inv-controls">
-        <!-- Search -->
-        <div class="inv-search-wrap">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="search" id="inv-search" class="form-input inv-search-input" placeholder="Search by name, set, tag..." autocomplete="off" aria-label="Search inventory" />
+        <div class="tcg-chips">
+          <span class="badge badge-pokemon">⚡ Pokémon</span>
+          <span class="badge badge-magic">🔮 Magic: The Gathering</span>
+          <span class="badge badge-lorcana">✨ Lorcana</span>
+          <span class="badge badge-yugioh">🐉 Yu-Gi-Oh!</span>
+          <span class="badge badge-onepiece">☠️ One Piece TCG</span>
+          <span class="badge badge-sealed">📦 Sealed</span>
+          <span class="badge badge-graded">🏅 Graded</span>
         </div>
 
-        <!-- Sort -->
-        <div class="inv-sort-wrap">
-          <label for="inv-sort" class="sr-only">Sort by</label>
-          <select id="inv-sort" class="form-select inv-sort-select" aria-label="Sort inventory">
-            <option value="newest">Newest First</option>
-            <option value="price-asc">Price: Low → High</option>
-            <option value="price-desc">Price: High → Low</option>
-            <option value="alpha">A → Z</option>
-          </select>
-        </div>
+        <a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener" class="collectr-main-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="11"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="18" width="7" height="3"/></svg>
+          Open Collectr Showcase
+        </a>
+        <div class="collectr-note">Opens Collectr in a new tab · @buddytohelpu · Updated regularly</div>
 
-        <!-- View toggle -->
-        <div class="inv-view-toggle" role="group" aria-label="View mode">
-          <button class="btn-icon btn-ghost view-grid active" id="view-grid" aria-label="Grid view" title="Grid view">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </button>
-          <button class="btn-icon btn-ghost view-list" id="view-list" aria-label="List view" title="List view">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Category Filters -->
-      <div class="filter-section">
-        <div class="filter-row">
-          <span class="filter-label">Game:</span>
-          <div class="filter-bar" id="cat-filters" role="group" aria-label="Filter by game">
-            <button class="filter-chip active" data-cat="all">All Games</button>
-            <button class="filter-chip" data-cat="pokemon">⚡ Pokémon</button>
-            <button class="filter-chip" data-cat="magic">🔮 Magic</button>
-            <button class="filter-chip" data-cat="yugioh">🐉 Yu-Gi-Oh!</button>
-            <button class="filter-chip" data-cat="sports">🏆 Sports</button>
-            <button class="filter-chip" data-cat="onepiece">☠️ One Piece</button>
-            <button class="filter-chip" data-cat="lorcana">✨ Lorcana</button>
-            <button class="filter-chip" data-cat="other">Other</button>
+        <div class="how-grid" style="margin-top:var(--space-8)">
+          <div class="how-card">
+            <div class="how-num">1</div>
+            <div class="how-title">Browse on Collectr</div>
+            <div class="how-desc">View the full up-to-date inventory with photos, conditions, and pricing.</div>
+          </div>
+          <div class="how-card">
+            <div class="how-num">2</div>
+            <div class="how-title">See something you want?</div>
+            <div class="how-desc">DM on Instagram or X (Twitter), or find Bud at the next card show.</div>
+          </div>
+          <div class="how-card">
+            <div class="how-num">3</div>
+            <div class="how-title">Make it happen</div>
+            <div class="how-desc">Cash at shows, or Venmo / Zelle / PayPal G&amp;S for online transactions.</div>
           </div>
         </div>
-        <div class="filter-row">
-          <span class="filter-label">Type:</span>
-          <div class="filter-bar" id="type-filters" role="group" aria-label="Filter by type">
-            <button class="filter-chip active" data-type="all">All Types</button>
-            <button class="filter-chip" data-type="single">🃏 Singles</button>
-            <button class="filter-chip" data-type="sealed">📦 Sealed</button>
-            <button class="filter-chip" data-type="graded">🏅 Graded</button>
-          </div>
+
+        <div style="margin-top:var(--space-6);padding-top:var(--space-6);border-top:1px solid var(--border-subtle);display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap">
+          <a href="/Buds-Collectibles/buy-sell-trade/" class="btn btn-outline">Buy · Sell · Trade Info</a>
+          <a href="/Buds-Collectibles/contact/" class="btn btn-ghost">Contact Bud</a>
+          <a href="/Buds-Collectibles/shows/" class="btn btn-ghost">Show Schedule</a>
         </div>
       </div>
-
-      <!-- Results count + active filters -->
-      <div class="inv-results-header">
-        <p class="inv-results-count" id="inv-results-count" aria-live="polite">Loading...</p>
-        <button class="btn btn-ghost btn-sm" id="clear-filters" style="display:none">✕ Clear Filters</button>
-      </div>
-
-      <!-- Inventory Grid -->
-      <div class="inventory-grid" id="inventory-grid" role="list" aria-label="Inventory items">
-        <!-- Loaded by JS -->
-        <div class="col-span-4 text-center" style="padding:3rem">
-          <div class="skeleton" style="height:200px;margin-bottom:1rem;border-radius:12px"></div>
-        </div>
-      </div>
-
-      <!-- No Results -->
-      <div id="inv-no-results" class="empty-state" hidden>
-        <div class="empty-state-icon">🔍</div>
-        <h3>No items found</h3>
-        <p>Try adjusting your search or filters.</p>
-        <button class="btn btn-outline mt-4" onclick="document.getElementById('clear-filters').click()">Clear All Filters</button>
-      </div>
-
-      <!-- Load More (if needed) -->
-      <div id="inv-load-more" style="text-align:center;margin-top:2rem;display:none">
-        <button class="btn btn-outline" id="load-more-btn">Load More Items</button>
-      </div>
-
     </div>
-  </section>
-
-  <!-- ── INQUIRY CTA ── -->
-  <section class="section-sm" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle)">
-    <div class="container text-center">
-      <h2 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:.5rem">Don't see what you're looking for?</h2>
-      <p style="color:var(--text-secondary);margin-bottom:1.5rem">Send a message or ask at the next show. Bud sources new inventory regularly and takes want-list requests.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="/Buds-Collectibles/contact/" class="btn btn-primary">Submit a Want List Request</a>
-        <a href="/Buds-Collectibles/buy-sell-trade/" class="btn btn-outline">Buy · Sell · Trade Info</a>
-      </div>
-    </div>
-  </section>
-
+  </div>
 </main>
 
-<!-- ── FOOTER ── -->
 <footer class="site-footer" role="contentinfo">
   <div class="container-wide">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/Buds-Collectibles/" class="footer-logo"><span class="footer-logo-icon">♦</span><span>Bud's Collectibles</span></a>
+        <a href="/Buds-Collectibles/" class="footer-logo"><img src="/Buds-Collectibles/images/logo.png" alt="Bud's Collectibles" class="footer-logo-img" /></a>
         <p class="footer-tagline">Buy · Sell · Trade · Connect</p>
-        <p class="footer-description">Your trusted Chicagoland trading card vendor.</p>
+        <p class="footer-description">Your trusted Chicagoland trading card vendor. Pokémon, Magic, Lorcana, and more.</p>
         <div class="footer-socials">
-          <a href="#" class="footer-social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
-          <a href="#" class="footer-social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://instagram.com/budscollectibles" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://x.com/budcollectibles" class="footer-social-link" aria-label="Twitter / X" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="/Buds-Collectibles/">Home</a></li><li><a href="/Buds-Collectibles/inventory/">Inventory</a></li>
-          <li><a href="/Buds-Collectibles/buy-sell-trade/">Buy · Sell · Trade</a></li><li><a href="/Buds-Collectibles/shows/">Shows</a></li>
-          <li><a href="/Buds-Collectibles/vendor/">Vendor Info</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">Categories</h4>
-        <ul class="footer-links">
-          <li><a href="/Buds-Collectibles/inventory/?cat=pokemon">Pokémon</a></li><li><a href="/Buds-Collectibles/inventory/?cat=magic">Magic</a></li>
-          <li><a href="/Buds-Collectibles/inventory/?cat=yugioh">Yu-Gi-Oh!</a></li><li><a href="/Buds-Collectibles/inventory/?cat=sports">Sports</a></li>
-          <li><a href="/Buds-Collectibles/inventory/?cat=onepiece">One Piece</a></li><li><a href="/Buds-Collectibles/inventory/?cat=lorcana">Lorcana</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">Find Us</h4>
-        <ul class="footer-links">
-          <li><a href="/Buds-Collectibles/shows/">Upcoming Shows</a></li><li><a href="/Buds-Collectibles/qr/">QR Hub</a></li>
-          <li><a href="/Buds-Collectibles/contact/">Contact</a></li>
-        </ul>
-        <div class="footer-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Bolingbrook, IL</div>
-      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/">Home</a></li><li><a href="/Buds-Collectibles/inventory/">Inventory</a></li><li><a href="/Buds-Collectibles/buy-sell-trade/">Buy · Sell · Trade</a></li><li><a href="/Buds-Collectibles/shows/">Shows</a></li><li><a href="/Buds-Collectibles/vendor/">Vendor Info</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">We Carry</h4><ul class="footer-links"><li><a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener">Pokémon TCG</a></li><li><a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener">Magic: The Gathering</a></li><li><a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener">Disney Lorcana</a></li><li><a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener">Yu-Gi-Oh!</a></li><li><a href="https://app.getcollectr.com/showcase/profile/@buddytohelpu" target="_blank" rel="noopener">One Piece TCG</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Find Us</h4><ul class="footer-links"><li><a href="/Buds-Collectibles/shows/">Upcoming Shows</a></li><li><a href="/Buds-Collectibles/qr/">QR Hub</a></li><li><a href="/Buds-Collectibles/contact/">Contact</a></li></ul><div class="footer-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Aurora, IL · Chicagoland</div></div>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">&copy; <span id="footer-year"></span> Bud's Collectibles.</p>
-      <div class="footer-bottom-links"><a href="/Buds-Collectibles/qr/">QR Hub</a><span>·</span><a href="/Buds-Collectibles/sitemap.xml">Sitemap</a></div>
-    </div>
+    <div class="footer-bottom"><p class="footer-copy">&copy; <span id="footer-year"></span> Bud's Collectibles.</p><div class="footer-bottom-links"><a href="/Buds-Collectibles/qr/">QR Hub</a><span>·</span><a href="/Buds-Collectibles/sitemap.xml">Sitemap</a></div></div>
   </div>
 </footer>
-
-<button id="back-to-top" aria-label="Back to top">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
+<button id="back-to-top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
 <div id="toast-container" aria-live="polite"></div>
-
-<!-- Item Detail Modal -->
-<div id="item-modal" class="modal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
-  <div class="modal-box">
-    <button class="modal-close" id="modal-close" aria-label="Close">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div id="modal-content"></div>
-  </div>
-</div>
-
 <script src="/Buds-Collectibles/scripts/theme.js"></script>
 <script src="/Buds-Collectibles/scripts/nav.js"></script>
 <script src="/Buds-Collectibles/scripts/search.js"></script>
 <script src="/Buds-Collectibles/scripts/utils.js"></script>
-<script src="/Buds-Collectibles/scripts/inventory.js"></script>
 </body>
 </html>

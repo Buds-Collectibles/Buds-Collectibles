@@ -417,3 +417,28 @@
 
 /* ── PUSH CONTENT BELOW FIXED NAV ── */
 main { padding-top: var(--nav-height); }
+
+/* ── LOGO IMAGE (replaces ♦ icon + text) ── */
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-logo-img {
+  height: 56px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Light mode: add a dark chip behind logo so black bg doesn't show on white */
+[data-theme="light"] .nav-logo-img,
+[data-theme="light"] .footer-logo-img {
+  background: #0a0a0f;
+  padding: 3px;
+  border-radius: 10px;
+}

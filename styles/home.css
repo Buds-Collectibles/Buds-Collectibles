@@ -748,3 +748,8 @@
   font-size: 0.68rem;
   color: var(--text-muted);
 }
+
+/* Twitter/X social card */
+.social-twitter:hover { border-color: #000; color: #000; }
+[data-theme="light"] .social-twitter:hover { border-color: #000; color: #000; }
+.qr-social-twitter:hover { border-color: #000; color: #000; }
