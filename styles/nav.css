@@ -26,6 +26,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
+  overflow: hidden; /* prevent any accidental horizontal overflow */
 }
 
 /* Logo */
@@ -123,9 +124,9 @@
 }
 
 .nav-mobile-toggle {
-  display: flex;
-  min-width: 44px;   /* guarantee full touch target width */
-  min-height: 44px;
+  display: inline-flex;  /* match .btn base class — keeps button inline with siblings */
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {
