@@ -26,7 +26,29 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  overflow: hidden; /* prevent any accidental horizontal overflow */
+  overflow: hidden;
+  /* Explicit centering — mirrors container class so nav aligns with page content */
+  max-width: var(--container-max);  /* 1200px */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .nav-inner {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-inner {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
 }
 
 /* Logo */
